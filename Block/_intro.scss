@@ -1,0 +1,80 @@
+.intro {
+  padding: 50px;
+  background-image: url(/images/Bitmap.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 30px;
+  &__title {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    /* or 100% */
+    width: 600px;
+    color: #fefcf7;
+  }
+  &__text {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    width: 370px;
+    color: #fefcf7;
+
+    opacity: 0.8;
+  }
+  &__button {
+    width: 217px;
+
+    height: 56px;
+    background-color: rgb(68, 227, 233);
+    color: azure;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+  }
+  &__button:hover {
+    transition: all 2s ease;
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .intro {
+    width: 90%;
+    margin: 50px auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/Bitmap.jpg);
+    &__title {
+      font-size: 35px;
+      width: 100%;
+      text-align: center;
+
+      /* Great coffee made si */
+
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 40px;
+      /* or 100% */
+      text-align: center;
+
+      color: #fefcf7;
+    }
+    &__text {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
